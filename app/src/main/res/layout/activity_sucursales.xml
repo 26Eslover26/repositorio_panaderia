@@ -109,7 +109,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -140,9 +140,10 @@
 
             <TextView
                 android:id="@+id/sucDescription2"
-                android:layout_width="155dp"
-                android:layout_height="57dp"
-                android:layout_marginStart="10dp"
+                android:layout_width="176dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="1dp"
                 android:text="@string/nuestra_sucursal_kennedy_cuenta_con_34_mesas_en_un_local_de_2_pisos_servicio_de_reposter_a_cafeter_a_y_desayunos"
                 android:textColor="@color/font_black"
                 app:layout_constraintBottom_toBottomOf="parent"

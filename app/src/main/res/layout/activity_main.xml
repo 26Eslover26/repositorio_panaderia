@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-black"
                 android:gravity="top|center_vertical"
-                android:text="Información general"
+                android:text="@string/info_text"
                 android:textColor="#EFEDED"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Pan caliente a toda hora!!!"
+                android:text="@string/desc_text"
                 android:textColor="#F3EFEF"
                 android:textSize="20sp" />
 
@@ -43,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Telefono: 321 2149353"
+                android:text="@string/tel_text"
                 android:textColor="#F3EFEF"
                 android:textSize="24sp" />
 
