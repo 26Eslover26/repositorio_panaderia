@@ -8,9 +8,142 @@
 
     <TextView
         android:id="@+id/serviciosName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Servicios"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@drawable/banner"
         android:textSize="24sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:background="#02831C1C"
+        android:capitalize="none"
+        android:fontFamily="sans-serif-black"
+        android:text="Servicios"
+        android:textSize="30sp"
+        app:layout_anchor="@+id/serviciosName"
+        app:layout_anchorGravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+            <ImageView
+                android:id="@+id/buffet1"
+                android:layout_width="137dp"
+                android:layout_height="163dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.062"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.131"
+                app:srcCompat="@drawable/buffet" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="215dp"
+                android:layout_height="140dp"
+                android:layout_marginEnd="12dp"
+                android:text="EVENTOS SOCIALES O DE NEGOCIOS A DOMICILIO Escoge en nuestro menú tus productos favoritos para atender tus celebraciones o reuniones empresariales en el lugar que escojas."
+                app:layout_constraintBottom_toTopOf="@+id/txt3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/buffet1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.896" />
+
+            <ImageView
+                android:id="@+id/desayuno1"
+                android:layout_width="137dp"
+                android:layout_height="163dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.062"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.408"
+                app:srcCompat="@drawable/desayuno" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="214dp"
+                android:layout_height="141dp"
+                android:layout_marginBottom="36dp"
+                android:text="DESAYUNOS DE TRABAJO, EVENTOS SOCIALES O EMPRESARIALES EN NUESTRAS INSTALACIONES "
+                app:layout_constraintBottom_toTopOf="@+id/txt4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.91"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/pastel1"
+                android:layout_width="137dp"
+                android:layout_height="163dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.062"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.697"
+                app:srcCompat="@drawable/pastel" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="223dp"
+                android:layout_height="129dp"
+                android:text="PRODUCTOS PERSONALIZADOS Personaliza tu pastel,  cheesecake, cupcakes o galletas para tus celebraciones o eventos sociales y de negocios."
+                app:layout_constraintBottom_toTopOf="@+id/txt5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.958"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.946" />
+
+            <ImageView
+                android:id="@+id/domicilio1"
+                android:layout_width="137dp"
+                android:layout_height="163dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.062"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.974"
+                app:srcCompat="@drawable/domicilio" />
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="208dp"
+                android:layout_height="148dp"
+                android:text="DOMICILIOS Todos nuestros deliciosos productos en tu puerta para que disfrutes de su sabor y su frescura sin moverte de tu casa o de tu oficina. "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.881"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.921" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
