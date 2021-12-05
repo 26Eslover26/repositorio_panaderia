@@ -6,18 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".Sucursales">
 
-    <TextView
-        android:id="@+id/sucursalesName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/sucursales"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="97dp"
+        android:background="@drawable/banner"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sucursalesName"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="cursive"
+            android:foregroundTint="@color/black"
+            android:text="@string/sucursales"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayoutSuc1"

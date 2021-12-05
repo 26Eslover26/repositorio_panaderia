@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">Panaderia Peter Pan</string>
-<<<<<<< HEAD
-    <string name="Servicios">Servicios Panaderia</string>
 =======
     <string name="sucursales">Sucursales</string>
     <string name="bogot_centro">Bogotá Centro</string>
@@ -33,5 +31,15 @@
     <string name="info_text">Información general</string>
     <string name="desc_text">Pan caliente a toda hora!!!</string>
     <string name="tel_text">Telefono: 321 2149353</string>
+    <string name="title_text1">Servicios</string>
+    <string name="title_servicio">EVENTOS SOCIALES O DE NEGOCIOS A DOMICILIO</string>
+    <string name="descServ1">Escoge en nuestro menú tus productos favoritos para atender tus celebraciones o reuniones empresariales en el lugar que escojas.</string>
+    <string name="nameServ2">DESAYUNOS DE TRABAJO Y EVENTOS EMPRESARIALES</string>
+    <string name="descServ2">Además de nuestra amplia variedad de deliciosos productos, contamos con un salón amplio y agradable para tus reuniones de negocios.</string>
+    <string name="nameServ3">PRODUCTOS PERSONALIZADOS</string>
+    <string name="descServ3">Personaliza tu pastel,  cheesecake, cupcakes o galletas para tus celebraciones o eventos sociales y de negocios.</string>
+    <string name="nameServ4">DOMICILIOS</string>
+    <string name="descServ4">Todos nuestros deliciosos productos en tu puerta para que disfrutes de su sabor y su frescura sin moverte de tu casa o de tu oficina.</string>
+    <string name="disponi">Sujeto a disponibilidad y cobertura</string>
 >>>>>>> d6b09a3e5ff3e02dc7b1e3560a2581be57c817ee
 </resources>

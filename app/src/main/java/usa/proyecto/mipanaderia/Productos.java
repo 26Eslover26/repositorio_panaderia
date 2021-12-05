@@ -19,22 +19,22 @@ public class Productos extends AppCompatActivity {
 
         Resources res = getResources();
         drawable = res.getDrawable(R.drawable.pan10, getTheme());
-        pan1 = findViewById(R.id.pan1);
+        pan1 = findViewById(R.id.domicilio1);
         pan1.setImageDrawable(drawable);
 
         Resources res1 = getResources();
         drawable1 = res1.getDrawable(R.drawable.pan20, getTheme());
-        pan2 = findViewById(R.id.pan2);
+        pan2 = findViewById(R.id.buffet1);
         pan2.setImageDrawable(drawable1);
 
         Resources res2 = getResources();
         drawable2 = res2.getDrawable(R.drawable.pan30, getTheme());
-        pan3 = findViewById(R.id.pan3);
+        pan3 = findViewById(R.id.desayuno1);
         pan3.setImageDrawable(drawable2);
 
         Resources res3 = getResources();
         drawable3 = res3.getDrawable(R.drawable.pan40, getTheme());
-        pan4 = findViewById(R.id.pan4);
+        pan4 = findViewById(R.id.pastel1);
         pan4.setImageDrawable(drawable3);
     }
 }
