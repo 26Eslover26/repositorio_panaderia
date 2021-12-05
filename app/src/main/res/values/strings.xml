@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Panaderia Peter Pan</string>
+    <string name="title_text">Productos</string>
+    <string name="title_prod1">Croissants</string>
+    <string name="desc_prod1">relleno de queso con bocadillo</string>
+    <string name="price_prod1">Unidad : $3.500</string>
+    <string name="title_prod2">Pan Trenza</string>
+    <string name="desc_prod2">Relleno de queso</string>
+    <string name="price_prod2">unidad : $5.000</string>
+    <string name="title_prod3">Pan Aliñado</string>
+    <string name="desc_prod3">paquete por 10 unidades</string>
+    <string name="price_prod3">Precio : $3.000</string>
+    <string name="title_prod4">Cupcakes</string>
+    <string name="desc_prod4">Sabores surtidos</string>
+    <string name="price_prod4">unidad : $4.500</string>
+    <string name="info_text">Información general</string>
+    <string name="desc_text">Pan caliente a toda hora!!!</string>
+    <string name="tel_text">Telefono: 321 2149353</string>
 </resources>
