@@ -1,4 +1,37 @@
 <resources>
     <string name="app_name">Panaderia Peter Pan</string>
+<<<<<<< HEAD
     <string name="Servicios">Servicios Panaderia</string>
+=======
+    <string name="sucursales">Sucursales</string>
+    <string name="bogot_centro">Bogotá Centro</string>
+    <string name="nuestra_primera_sede_y_la_m_s_grande_gran_espacio_57_mesas_4_puestos_servicio_de_helader_a_unicamente_en_esta_sucursal">Nuestra primera sucursal y la más grande. Gran espacio, 57 mesas 4 puestos, única con servicio de heladería.</string>
+    <string name="carrera_10_34_14">Carrera 10 #34-14</string>
+    <string name="todo">TODO</string>
+    <string name="tel_7252300">Tel. 7252300</string>
+    <string name="calle_22sur_78b_82">Calle 22Sur 78B-82</string>
+    <string name="tel_5362047">Tel. 5362047</string>
+    <string name="calle_87_11_43">Calle 87 #11-43</string>
+    <string name="nuestra_sucursal_kennedy_cuenta_con_34_mesas_en_un_local_de_2_pisos_servicio_de_reposter_a_cafeter_a_y_desayunos">Nuestra sucursal Kennedy cuenta con 34 mesas en 2 pisos. Servicio de repostería, cafetería y desayunos.</string>
+    <string name="tel_6787606">Tel. 6787606</string>
+    <string name="kennedy">Kennedy</string>
+    <string name="chic_norte">Chicó Norte</string>
+    <string name="nuestra_sucursal_del_norte_tiene_nuestros_mejores_productos_instalaciones_modernas_y_c_modas_de_alta_calidad">Nuestra sucursal del Norte tiene nuestros mejores productos. Instalaciones modernas y cómodas de alta calidad.</string>
+    <string name="title_text">Productos</string>
+    <string name="title_prod1">Croissants</string>
+    <string name="desc_prod1">relleno de queso con bocadillo</string>
+    <string name="price_prod1">Unidad : $3.500</string>
+    <string name="title_prod2">Pan Trenza</string>
+    <string name="desc_prod2">Relleno de queso</string>
+    <string name="price_prod2">unidad : $5.000</string>
+    <string name="title_prod3">Pan Aliñado</string>
+    <string name="desc_prod3">paquete por 10 unidades</string>
+    <string name="price_prod3">Precio : $3.000</string>
+    <string name="title_prod4">Cupcakes</string>
+    <string name="desc_prod4">Sabores surtidos</string>
+    <string name="price_prod4">unidad : $4.500</string>
+    <string name="info_text">Información general</string>
+    <string name="desc_text">Pan caliente a toda hora!!!</string>
+    <string name="tel_text">Telefono: 321 2149353</string>
+>>>>>>> d6b09a3e5ff3e02dc7b1e3560a2581be57c817ee
 </resources>
