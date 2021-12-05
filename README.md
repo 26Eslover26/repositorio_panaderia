@@ -1,31 +1,25 @@
-# Título del Proyecto
+# Peter Pan
 
-_Acá va un párrafo que describa lo que es el proyecto_
+_Aplicación movil para Android de una panadería ficticia desarrollada con la intención de practicar y entender el desarrollo movil_
 
-## Comenzando 🚀
-
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
+## Crea una copia 🚀
+  
+ $ git clone https://github.com/26Eslover26/repositorio_panaderia.git
+  
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+* [Gridle](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
+* [Android Studio](https://maven.apache.org/) - Manejador de dependencias
 
 ## Autores ✒️
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **Jonnathan Alexander Beltran Aponte  ** - *Trabajo Inicial* - [none](none)
+* **Edwin Eslover Romero Fonseca  ** - *Trabajo Inicial* - [26Eslover26](https://github.com/26Eslover26)
+* **Javi Johan Rodríguez Giraldo  ** - *Trabajo Inicial* - [Bimbitor](https://github.com/Bimbitor)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/26Eslover26/repositorio_panaderia/graphs/contributors) quíenes han participado en este proyecto. 
 
 ---
-⌨️ con ❤️ por [Villanuevand](https://github.com/Bimbitor) 😊
+⌨️ con ❤️ por [Bimbitor](https://github.com/Bimbitor) 😊
