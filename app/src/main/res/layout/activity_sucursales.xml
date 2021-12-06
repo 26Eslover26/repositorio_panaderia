@@ -10,13 +10,16 @@
         android:layout_width="412dp"
         android:layout_height="97dp"
         android:background="@drawable/banner"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/sucursalesName"
-            android:layout_width="357dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="25dp"
             android:fontFamily="cursive"
             android:foregroundTint="@color/black"
             android:text="@string/sucursales"
