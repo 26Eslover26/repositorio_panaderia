@@ -4,17 +4,39 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 public class Sucursales extends AppCompatActivity {
+
+    Drawable drawable1, drawable2, drawable3;
+    ImageView desayuno1, pastel1, domicilio1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sucursales);
+
+
+        Resources res1 = getResources();
+        drawable1 = res1.getDrawable(R.drawable.foto_centro, getTheme());
+        desayuno1 = findViewById(R.id.sucImage1);
+        desayuno1.setImageDrawable(drawable1);
+
+        Resources res2 = getResources();
+        drawable2 = res2.getDrawable(R.drawable.foto_kennedy, getTheme());
+        pastel1 = findViewById(R.id.sucImage2);
+        pastel1.setImageDrawable(drawable2);
+
+        Resources res3 = getResources();
+        drawable3 = res3.getDrawable(R.drawable.foto_chico, getTheme());
+        domicilio1 = findViewById(R.id.sucImage3);
+        domicilio1.setImageDrawable(drawable3);
     }
 
     @Override
