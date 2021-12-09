@@ -1,6 +1,7 @@
 package usa.proyecto.mipanaderia;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -16,12 +17,16 @@ public class Sucursales extends AppCompatActivity {
 
     Drawable drawable1, drawable2, drawable3;
     ImageView desayuno1, pastel1, domicilio1;
+    private ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sucursales);
 
+        actionBar = getSupportActionBar();
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setIcon(R.mipmap.ic_gingerbread);
 
         Resources res1 = getResources();
         drawable1 = res1.getDrawable(R.drawable.foto_centro, getTheme());

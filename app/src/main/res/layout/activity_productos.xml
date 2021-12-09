@@ -10,10 +10,10 @@
 
     <TextView
         android:id="@+id/productoName"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="69dp"
         android:background="@drawable/banner"
-        android:fontFamily="cursive"
+        android:fontFamily="@font/acme_regular"
         android:text="@string/title_text"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -22,7 +22,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_background">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,10 +33,11 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:gravity="center">
 
                 <ImageView
-                    android:id="@+id/buffet1"
+                    android:id="@+id/croasan"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     tools:srcCompat="@drawable/pan20" />
@@ -43,38 +45,38 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/nameServi1"
-                        android:layout_width="match_parent"
+                        android:id="@+id/nameProd1"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
                         android:text="@string/title_prod1"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/descServ1"
-                        android:layout_width="match_parent"
+                        android:id="@+id/descProd1"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/desc_prod1"
-                        android:textAlignment="center"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/priceProd1"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:text="@string/price_prod1"
-                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"/>
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -82,11 +84,11 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <ImageView
-                    android:id="@+id/desayuno1"
+                    android:id="@+id/panTrenza"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     tools:srcCompat="@drawable/pan30" />
@@ -94,35 +96,34 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/nameServ2"
-                        android:layout_width="match_parent"
+                        android:id="@+id/nameProd2"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
                         android:text="@string/title_prod2"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/descServ2"
-                        android:layout_width="match_parent"
+                        android:id="@+id/descProd2"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:text="@string/desc_prod2"
-                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/priceProd2"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/price_prod2"
-                        android:textAlignment="center"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -132,11 +133,11 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <ImageView
-                    android:id="@+id/pastel1"
+                    android:id="@+id/panAliñado"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     tools:srcCompat="@drawable/pan40" />
@@ -144,35 +145,34 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/nameServ3"
-                        android:layout_width="match_parent"
+                        android:id="@+id/nameProd3"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
                         android:text="@string/title_prod3"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/descServ3"
-                        android:layout_width="match_parent"
+                        android:id="@+id/descProd3"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/desc_prod3"
-                        android:textAlignment="center"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/priceProd3"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:text="@string/price_prod3"
-                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -180,48 +180,48 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <ImageView
-                    android:id="@+id/domicilio1"
+                    android:id="@+id/cupcake"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     tools:srcCompat="@drawable/pan10" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/nameServ4"
-                        android:layout_width="match_parent"
+                        android:id="@+id/nameProd4"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
                         android:text="@string/title_prod4"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/descServ4"
-                        android:layout_width="match_parent"
+                        android:id="@+id/descProd4"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:text="@string/desc_prod4"
-                        android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/disponi"
-                        android:layout_width="match_parent"
+                        android:id="@+id/priceProd4"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/price_prod4"
-                        android:textAlignment="center"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />

@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
     android:orientation="vertical"
-    tools:context=".Productos">
+    tools:context=".Servicios">
 
     <TextView
-        android:id="@+id/productoName"
+        android:id="@+id/serviciosName"
         android:layout_width="match_parent"
-        android:layout_height="61dp"
+        android:layout_height="69dp"
         android:background="@drawable/banner"
-        android:fontFamily="cursive"
+        android:fontFamily="@font/acme_regular"
         android:text="@string/title_text1"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -33,7 +33,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#FFFFFF"
+                android:orientation="horizontal"
                 android:gravity="center">
 
                 <ImageView
@@ -45,15 +45,13 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/nameServi1"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif"
-                        android:gravity="center_vertical"
+                        android:fontFamily="@font/acme_regular"
                         android:text="@string/title_servicio"
                         android:textColor="@color/black"
                         android:textSize="16sp"
@@ -61,11 +59,10 @@
 
                     <TextView
                         android:id="@+id/descServ1"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="cursive"
                         android:text="@string/descServ1"
-                        android:textAlignment="center"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -77,8 +74,8 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <ImageView
                     android:id="@+id/desayuno1"
@@ -89,14 +86,13 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/nameServ2"
-                        android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/acme_regular"
                         android:text="@string/nameServ2"
                         android:textColor="@color/black"
                         android:textSize="16sp"
@@ -105,10 +101,9 @@
                     <TextView
                         android:id="@+id/descServ2"
                         android:layout_width="match_parent"
-                        android:layout_height="99dp"
-                        android:fontFamily="cursive"
+                        android:layout_height="wrap_content"
                         android:text="@string/descServ2"
-                        android:textAlignment="center"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -119,8 +114,8 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <ImageView
                     android:id="@+id/pastel1"
@@ -131,35 +126,33 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/nameServ3"
-                        android:layout_width="match_parent"
-                        android:layout_height="53dp"
-                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/nameServ3"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/acme_regular"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/descServ3"
-                        android:layout_width="match_parent"
-                        android:layout_height="112dp"
-                        android:fontFamily="cursive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="@string/descServ3"
-                        android:textAlignment="center"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal">
@@ -171,15 +164,15 @@
                     tools:srcCompat="@drawable/domicilio" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/nameServ4"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
+                        android:fontFamily="@font/acme_regular"
                         android:text="@string/nameServ4"
                         android:textColor="@color/black"
                         android:textSize="16sp"
@@ -187,22 +180,20 @@
 
                     <TextView
                         android:id="@+id/descServ4"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="cursive"
                         android:text="@string/descServ4"
-                        android:textAlignment="center"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/disponi"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-black"
                         android:text="@string/disponi"
-                        android:textAlignment="center"
+                        android:fontFamily="@font/acme_regular"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />

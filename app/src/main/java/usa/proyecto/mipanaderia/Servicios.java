@@ -1,5 +1,6 @@
 package usa.proyecto.mipanaderia;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -15,11 +16,16 @@ public class Servicios extends AppCompatActivity {
 
     Drawable drawable, drawable1, drawable2, drawable3;
     ImageView buffet1, desayuno1, pastel1, domicilio1;
+    private ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_servicios);
+
+        actionBar = getSupportActionBar();
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setIcon(R.mipmap.ic_gingerbread);
 
         Resources res = getResources();
         drawable = res.getDrawable(R.drawable.buffet, getTheme());
