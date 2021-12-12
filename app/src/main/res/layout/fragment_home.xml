@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/cardview_light_background"
     android:orientation="vertical"
-    tools:context=".Productos">
+    tools:context=".ui.home.HomeFragment">
 
     <TextView
         android:id="@+id/productoName"
@@ -14,7 +14,7 @@
         android:layout_height="69dp"
         android:background="@drawable/banner"
         android:fontFamily="@font/acme_regular"
-        android:text="@string/title_text"
+        android:text="@string/menu_home"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="40sp"
@@ -23,6 +23,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:backgroundTint="@color/design_default_color_background">
 
         <LinearLayout
@@ -33,26 +34,30 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="5dp"
                 android:orientation="horizontal"
                 android:gravity="center">
 
+
                 <ImageView
-                    android:id="@+id/croasan"
+                    android:id="@+id/imageView2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    tools:srcCompat="@drawable/pan20" />
+                    android:layout_weight="1"
+                    android:src="@drawable/pan20" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_width="232dp"
+                    android:layout_height="148dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
 
                     <TextView
                         android:id="@+id/nameProd1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/title_prod1"
                         android:fontFamily="@font/fuzzybubbles_regular"
+                        android:text="@string/title_prod1"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -61,8 +66,8 @@
                         android:id="@+id/descProd1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/desc_prod1"
                         android:fontFamily="@font/fuzzybubbles_regular"
+                        android:text="@string/desc_prod1"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -75,7 +80,7 @@
                         android:text="@string/price_prod1"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -84,26 +89,30 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="5dp"
                 android:orientation="horizontal"
                 android:gravity="center">
 
+
                 <ImageView
-                    android:id="@+id/panTrenza"
+                    android:id="@+id/imageView3"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    tools:srcCompat="@drawable/pan30" />
+                    android:layout_weight="1"
+                    android:src="@drawable/pan30" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="231dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="5dp">
 
                     <TextView
                         android:id="@+id/nameProd2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/title_prod2"
                         android:fontFamily="@font/fuzzybubbles_regular"
+                        android:text="@string/title_prod2"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -122,8 +131,8 @@
                         android:id="@+id/priceProd2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/price_prod2"
                         android:fontFamily="@font/fuzzybubbles_regular"
+                        android:text="@string/price_prod2"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -133,27 +142,31 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="5dp"
                 android:orientation="horizontal"
                 android:gravity="center">
 
+
                 <ImageView
-                    android:id="@+id/panAliñado"
+                    android:id="@+id/imageView4"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    tools:srcCompat="@drawable/pan40" />
+                    android:layout_weight="1"
+                    android:src="@drawable/pan40" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_width="227dp"
+                    android:layout_height="140dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
 
                     <TextView
                         android:id="@+id/nameProd3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:text="@string/title_prod3"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -161,8 +174,8 @@
                         android:id="@+id/descProd3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/desc_prod3"
                         android:fontFamily="@font/fuzzybubbles_regular"
+                        android:text="@string/desc_prod3"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -180,29 +193,33 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="343dp"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:padding="5dp">
+
 
                 <ImageView
-                    android:id="@+id/cupcake"
+                    android:id="@+id/imageView5"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    tools:srcCompat="@drawable/pan10" />
+                    android:layout_weight="1"
+                    android:src="@drawable/pan10" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="5dp">
 
                     <TextView
                         android:id="@+id/nameProd4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:text="@string/title_prod4"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/fuzzybubbles_regular"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -220,8 +237,8 @@
                         android:id="@+id/priceProd4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/price_prod4"
                         android:fontFamily="@font/fuzzybubbles_regular"
+                        android:text="@string/price_prod4"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -234,3 +251,5 @@
 
 
 </LinearLayout>
+
+

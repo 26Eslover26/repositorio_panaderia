@@ -34,33 +34,16 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setIcon(R.mipmap.ic_gingerbread);
 
-    }
+        btInicio = findViewById(R.id.btnIniciar);
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menuopciones, menu);
-        return true;
-    }
+        btInicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mainIntent = new Intent(MainActivity.this, MainMenu.class);
+                mainIntent.putExtra("nombre", edCorreo.getText().toString());
+                startActivity(mainIntent);
+            }
+        });
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        if(id == R.id.productosId){
-            Intent pantallaProductos = new Intent(this, Productos.class);
-            startActivity(pantallaProductos);
-            Toast.makeText(getApplicationContext(), "Productos", Toast.LENGTH_SHORT).show();
-        }
-        if(id == R.id.serviciosId){
-            Intent pantallaServicios = new Intent(this, Servicios.class);
-            startActivity(pantallaServicios);
-            Toast.makeText(getApplicationContext(), "Servicios", Toast.LENGTH_SHORT).show();
-        }
-        if(id == R.id.sucursalesId){
-            Intent pantallaSucursales = new Intent(this, Sucursales.class);
-            startActivity(pantallaSucursales);
-            Toast.makeText(getApplicationContext(), "Sucursales", Toast.LENGTH_SHORT).show();
-        }
-        return super.onOptionsItemSelected(item);
     }
 }

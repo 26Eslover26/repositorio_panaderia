@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Panceto</string>
-    <string name="sucursales">Sucursales</string>
+    <string name="txtBienvenida">Bienvenid@</string>
     <string name="bogot_centro">Bogotá Centro</string>
     <string name="descSuc1">Nuestra primera sucursal y la más grande. Gran espacio, 57 mesas 4 puestos, única con servicio de heladería.</string>
     <string name="carrera_10_34_14">Carrera 10 #34-14</string>
@@ -14,7 +14,7 @@
     <string name="kennedy">Kennedy</string>
     <string name="chic_norte">Chicó Norte</string>
     <string name="descSuc3">Nuestra sucursal del Norte tiene nuestros mejores productos. Instalaciones modernas y cómodas de alta calidad.</string>
-    <string name="title_text">Productos</string>
+    <string name="txt_contraseña">Contraseña</string>
     <string name="title_prod1">Croissants</string>
     <string name="desc_prod1">relleno de queso con bocadillo</string>
     <string name="price_prod1">Unidad : $3.500</string>
@@ -30,7 +30,7 @@
     <string name="info_text">Información general</string>
     <string name="desc_text">Pan caliente a toda hora!!!</string>
     <string name="tel_text">Telefono: 321 2149353</string>
-    <string name="title_text1">Servicios</string>
+    <string name="txt_usuario">Usuario</string>
     <string name="title_servicio">EVENTOS SOCIALES O DE NEGOCIOS A DOMICILIO</string>
     <string name="descServ1">Escoge en nuestro menú tus productos favoritos para atender tus celebraciones o reuniones empresariales en el lugar que escojas.</string>
     <string name="nameServ2">DESAYUNOS DE TRABAJO Y EVENTOS EMPRESARIALES</string>
@@ -40,4 +40,21 @@
     <string name="nameServ4">DOMICILIOS</string>
     <string name="descServ4">Todos nuestros deliciosos productos en tu puerta para que disfrutes de su sabor y su frescura sin moverte de tu casa o de tu oficina.</string>
     <string name="disponi">Sujeto a disponibilidad y cobertura</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Panceto</string>
+    <string name="nav_header_subtitle">panceto@panceto.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_close">Cerrar sesión</string>
+    <string name="action_buy">Carrito de compras</string>
+    <string name="correo_hint">Escribe tu usuario</string>
+    <string name="contraseña_hint">Escribe tu contraseña</string>
+    <string name="btn1_hint">iniciar</string>
+    <string name="btn2_hint">Registrar</string>
+    <string name="menu_home">Productos</string>
+    <string name="menu_gallery">Servicios</string>
+    <string name="menu_slideshow">Sucursales</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
