@@ -12,7 +12,7 @@ import android.widget.ImageView;
 
 public class Splash extends AppCompatActivity {
 
-    private final int Time = 2000;
+    private final int Time = 5000;
     private ActionBar actionBar;
 
     @Override

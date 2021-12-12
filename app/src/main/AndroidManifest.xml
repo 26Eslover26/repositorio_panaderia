@@ -18,15 +18,6 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Sucursales"
-            android:exported="false" />
-        <activity
-            android:name=".Servicios"
-            android:exported="false" />
-        <activity
-            android:name=".Productos"
-            android:exported="false" />
-        <activity
             android:name=".Splash"
             android:exported="true">
             <intent-filter>
