@@ -8,10 +8,10 @@ _Aplicación movil para Android de una panadería ficticia desarrollada con la i
   
 ## Construido con 🛠️
 
-* [Gridle](http://www.dropwizard.io/1.0.2/docs/) - El framework usado
-* [Android Studio](https://maven.apache.org/) - IDE de desarrollo
-* [Oracle cloud](https://maven.apache.org/) - Sistema de almacenamiento en la nube
-* [Java](https://maven.apache.org/) - Lenguaje de programación
+* [Gradle](https://gradle.org/) - El framework usado
+* [Android Studio](https://developer.android.com/) - IDE de desarrollo
+* [Oracle cloud](https://www.oracle.com/cloud/) - Sistema de almacenamiento en la nube
+* [Java](https://www.java.com/en/) - Lenguaje de programación
 
 ## Autores ✒️
 
