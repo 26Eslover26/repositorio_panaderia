@@ -1,4 +1,4 @@
-# Peter Pan
+# Panceto
 
 _Aplicación movil para Android de una panadería ficticia desarrollada con la intención de practicar y entender el desarrollo movil_
 
