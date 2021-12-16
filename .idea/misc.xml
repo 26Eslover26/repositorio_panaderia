@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/JAVI/Desktop/VSCode/mision_tic_2022/ciclo4/repositorio_panaderia/app/src/main/res/layout/activity_form.xml" value="0.1" />
+        <entry key="..\:/Users/JAVI/Desktop/VSCode/mision_tic_2022/ciclo4/repositorio_panaderia/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/JAVI/Desktop/VSCode/mision_tic_2022/ciclo4/repositorio_panaderia/app/src/main/res/layout/activity_splash.xml" value="0.11018518518518519" />
+        <entry key="..\:/Users/JAVI/Desktop/VSCode/mision_tic_2022/ciclo4/repositorio_panaderia/app/src/main/res/layout/app_bar_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/JAVI/Desktop/VSCode/mision_tic_2022/ciclo4/repositorio_panaderia/app/src/main/res/layout/content_main.xml" value="0.11018518518518519" />
+        <entry key="..\:/Users/JAVI/Desktop/VSCode/mision_tic_2022/ciclo4/repositorio_panaderia/app/src/main/res/layout/fragment_home.xml" value="0.11018518518518519" />
+        <entry key="..\:/Users/JAVI/Desktop/VSCode/mision_tic_2022/ciclo4/repositorio_panaderia/app/src/main/res/layout/fragment_servicios.xml" value="0.1527777777777778" />
+        <entry key="..\:/Users/JAVI/Desktop/VSCode/mision_tic_2022/ciclo4/repositorio_panaderia/app/src/main/res/layout/fragment_sucursales.xml" value="0.11018518518518519" />
+        <entry key="..\:/Users/JAVI/Desktop/VSCode/mision_tic_2022/ciclo4/repositorio_panaderia/app/src/main/res/layout/nav_header_main.xml" value="0.11018518518518519" />
+        <entry key="..\:/Users/JAVI/Downloads/Reto22/app/src/main/res/layout/activity_form.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/jonna/Desktop/Reto22/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1" />
+        <entry key="..\:/Users/jonna/Desktop/Reto22/app/src/main/res/layout/activity_main.xml" value="0.125" />
+        <entry key="..\:/Users/jonna/Desktop/Reto22/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jonna/Desktop/Reto22/app/src/main/res/layout/app_bar_main.xml" value="0.125" />
+        <entry key="..\:/Users/jonna/Desktop/Reto22/app/src/main/res/layout/fragment_productos.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jonna/Desktop/Reto22/app/src/main/res/layout/fragment_servicios.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jonna/Desktop/Reto22/app/src/main/res/layout/fragment_sucursales.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jonna/Desktop/Reto22/app/src/main/res/layout/nav_header_main.xml" value="0.125" />
+        <entry key="..\:/Users/jonna/Desktop/Reto22/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jonna/Desktop/Reto22/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jonna/Desktop/Reto22/app/src/main/res/mipmap-anydpi-v26/ic_gingerbread.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
