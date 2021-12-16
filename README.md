@@ -8,14 +8,14 @@ _Aplicación movil para Android de una panadería ficticia desarrollada con la i
   
 ## Construido con 🛠️
 
-* [Gridle](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Android Studio](https://maven.apache.org/) - Manejador de dependencias
+* [Gradle](https://gradle.org/) - El framework usado
+* [Android Studio](https://developer.android.com/studio) - IDE de desarrollo
+* [Oracle cloud](https://www.oracle.com/index.html) - Servicio en la nube
+* [Java](https://www.java.com/en/) - Lenguaje de programación
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Jonnathan Alexander Beltran Aponte  ** - *Trabajo Inicial* - [none](none)
+* **Jonnathan Alexander Beltran Aponte  ** - *Trabajo Inicial* - [JonnathanBelt](https://github.com/JonnathanBelt)
 * **Edwin Eslover Romero Fonseca  ** - *Trabajo Inicial* - [26Eslover26](https://github.com/26Eslover26)
 * **Javi Johan Rodríguez Giraldo  ** - *Trabajo Inicial* - [Bimbitor](https://github.com/Bimbitor)
 
