@@ -21,74 +21,76 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textUsuario"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="68dp"
-        android:fontFamily="@font/acme_regular"
-        android:text="@string/txt_usuario"
-        android:textColor="#171616"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/correoInicio"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="124dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/txtBienvenidaId"
+        tools:layout_editor_absoluteX="30dp">
 
-    <EditText
-        android:id="@+id/correoInicio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:hint="@string/correo_hint"
-        android:inputType="textEmailAddress"
-        android:textColor="#131313"
-        android:textColorHint="#171616"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme_regular"
+            android:text="@string/txt_usuario"
+            android:textColor="#171616"
+            android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/textContraseña"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:fontFamily="@font/acme_regular"
-        android:text="@string/txt_contraseña"
-        android:textColor="#151414"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/contraseñaInicio"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textUsuario" />
+        <EditText
+            android:id="@+id/correoInicio"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/correo_hint"
+            android:inputType="textEmailAddress"
+            android:textColor="#131313"
+            android:textColorHint="#171616" />
+    </LinearLayout>
 
-    <EditText
-        android:id="@+id/contraseñaInicio"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:ems="10"
-        android:hint="@string/contraseña_hint"
-        android:inputType="textPassword"
-        android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/correoInicio" />
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="30dp">
+
+        <TextView
+            android:id="@+id/textContraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme_regular"
+            android:text="@string/txt_contraseña"
+            android:textColor="#151414"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/contraseñaInicio"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/contraseña_hint"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnIniciar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="52dp"
         android:text="@string/btn1_hint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBienvenidaId" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:text="@string/btn2_hint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

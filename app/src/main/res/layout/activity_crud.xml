@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".CrudActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/design_default_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txt_codigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:hint="@string/txt_codigo"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/txt_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="@string/txt_descripcion"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/txt_precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="@string/txt_precio"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:onClick="Registrar"
+                android:text="@string/BotonRegistrar" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:onClick="Buscar"
+                android:text="@string/BotonBuscar" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:onClick="Modificar"
+                android:text="@string/BotonModificar" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:onClick="Eliminar"
+                android:text="@string/BotonEliminar" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

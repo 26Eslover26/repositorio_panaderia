@@ -17,15 +17,15 @@
         app:showAsAction="always"
         android:icon="@drawable/ic_baseline_search_24"/>
     <item
-        android:id="@+id/carritoId"
+        android:id="@+id/crud"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
         android:orderInCategory="100"
-        android:title="@string/action_buy"
-        app:showAsAction="never"
-        android:icon="@drawable/ic_baseline_shopping_cart_24"/>/>
+        android:title="@string/opcioncrud"
+        app:showAsAction="never" />/>
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/ubicacionesId"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
         android:orderInCategory="100"
-        android:title="@string/action_close"
-        app:showAsAction="never"
-        android:icon="@drawable/ic_baseline_exit_to_app_24"/>/>
+        android:title="@string/opcionubicaciones"
+        app:showAsAction="never" />/>
 </menu>

@@ -10,32 +10,28 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ImageView;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class Splash extends AppCompatActivity {
 
-    private final int Time = 5000;
-    private ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        actionBar = getSupportActionBar();
-        actionBar.setDisplayShowHomeEnabled(true);
-        actionBar.setIcon(R.mipmap.ic_gingerbread);
-
-        Resources reso = getResources();
-        Drawable drawable = reso.getDrawable(R.drawable.kamranaydinov, getTheme());
-        ImageView portada = findViewById(R.id.portada);
-        portada.setImageDrawable(drawable);
-
-        new Handler().postDelayed(new Runnable() {
+        TimerTask tarea = new TimerTask() {
             @Override
             public void run() {
                 Intent intent = new Intent(Splash.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
-        },Time);
+        };
+        Timer tiempo = new Timer();
+        tiempo.schedule(tarea, 5000);
+
     }
 
 

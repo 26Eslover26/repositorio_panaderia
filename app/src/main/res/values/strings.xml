@@ -3,7 +3,7 @@
     <string name="txtBienvenida">Bienvenid@</string>
     <string name="bogot_centro">Bogotá Centro</string>
     <string name="descSuc1">Nuestra primera sucursal y la más grande. Gran espacio, 57 mesas 4 puestos, única con servicio de heladería.</string>
-    <string name="carrera_10_34_14">Carrera 10 #34-14</string>
+    <string name="carrera_10_34_14">Carrera 13 #34-14</string>
     <string name="todo">TODO</string>
     <string name="tel_7252300">Tel. 7252300</string>
     <string name="calle_22sur_78b_82">Calle 22Sur 78B-82</string>
@@ -55,6 +55,15 @@
     <string name="menu_home">Productos</string>
     <string name="menu_gallery">Servicios</string>
     <string name="menu_slideshow">Sucursales</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addToFavorite">Se añadió a favoritos</string>
+    <string name="btnsqltext1">Listar productos</string>
+    <string name="opcioncrud">CRUD</string>
+    <string name="opcionubicaciones">Ubicaciones</string>
+    <string name="txt_codigo">Código del producto</string>
+    <string name="txt_descripcion">Descripción del producto</string>
+    <string name="txt_precio">Precio del producto</string>
+    <string name="BotonRegistrar">Registrar Producto</string>
+    <string name="BotonBuscar">Buscar Producto</string>
+    <string name="BotonEliminar">Eliminar Producto</string>
+    <string name="BotonModificar">Modificar Producto</string>
 </resources>

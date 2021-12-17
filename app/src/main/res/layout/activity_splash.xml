@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/tabla"
-    android:orientation="vertical"
-    tools:context=".Splash">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
 
-    <ImageView
-        android:id="@+id/portada"
-        android:layout_width="239dp"
-        android:layout_height="218dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:src="@drawable/gingerbreadgif" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="546dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</RelativeLayout>
 
 
