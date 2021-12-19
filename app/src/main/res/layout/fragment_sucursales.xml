@@ -3,6 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ui.sucursales.SucursalesFragment">
+    <GridView
+        android:id="@+id/gridSucursal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="1"
+        />
+
+</LinearLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/cardview_light_background"
     android:orientation="vertical"
     tools:context=".ui.sucursales.SucursalesFragment">
@@ -232,4 +246,4 @@
         </LinearLayout>
 
     </ScrollView>
-</LinearLayout>
+</LinearLayout>-->

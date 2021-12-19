@@ -68,5 +68,7 @@
     <string name="btn2_hint">Registrar</string>
     <string name="menu_gallery">Servicios</string>
     <string name="menu_slideshow">Sucursales</string>
+    <string name="title_activity_from_maps">FromMapsActivity</string>
+    <string name="title_activity_show_maps">ShowMapsActivity</string>
 
 </resources>

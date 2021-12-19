@@ -1,5 +1,6 @@
 package com.example.reto2.casos_uso;
 
+
 import android.database.Cursor;
 
 import com.example.reto2.modelos.Sucursal;
@@ -7,7 +8,7 @@ import com.example.reto2.modelos.Sucursal;
 import java.util.ArrayList;
 
 public class CasoUsoSucursal {
-    public ArrayList<Sucursal> llenarListaSucursals(Cursor cursor){
+    public ArrayList<Sucursal> llenarListaSucursales(Cursor cursor){
         ArrayList<Sucursal> list = new ArrayList<>();
         if(cursor.getCount() == 0){
             return list;
@@ -25,4 +26,5 @@ public class CasoUsoSucursal {
             return list;
         }
     }
+
 }

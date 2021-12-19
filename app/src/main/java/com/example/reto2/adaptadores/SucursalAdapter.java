@@ -1,6 +1,7 @@
 package com.example.reto2.adaptadores;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.reto2.R;
+import com.example.reto2.ShowMapsActivity;
 import com.example.reto2.modelos.Sucursal;
 
 import java.util.ArrayList;
@@ -65,6 +67,15 @@ public class SucursalAdapter extends BaseAdapter {
         campo2.setText(sucursal.getDescription());
         campo3.setText(sucursal.getLocation());
         imageView.setImageBitmap(bitmap);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ShowMapsActivity.class);
+                intent.putExtra("name", sucursal.getName());
+                intent.putExtra("location", sucursal.getLocation());
+                context.startActivity(intent);
+            }
+        });
 
         return convertView;
     }
