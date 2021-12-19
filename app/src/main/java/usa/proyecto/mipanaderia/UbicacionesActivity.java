@@ -1,5 +1,6 @@
 package usa.proyecto.mipanaderia;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -19,6 +20,7 @@ public class UbicacionesActivity extends AppCompatActivity {
     ArrayList<OverlayItem> puntos = new ArrayList<OverlayItem>();
     private MapView myOpenMapView;
     private MapController myMapController;
+    private ActionBar actionBar;
 
 
     @Override
@@ -51,6 +53,10 @@ public class UbicacionesActivity extends AppCompatActivity {
         puntos.add(new OverlayItem("Panceto", "Sede Kennedy", Kennedy));
         puntos.add(new OverlayItem("Panceto","Sede Chicó", Chico));
         refrescaPuntos();
+
+        actionBar = getSupportActionBar();
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setIcon(R.mipmap.ic_gingerbread);
     }
 
 

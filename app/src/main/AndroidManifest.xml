@@ -17,10 +17,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiPanaderia">
         <activity
+            android:name=".ListarActivity"
+            android:exported="false" />
+        <activity
             android:name=".UbicacionesActivity"
             android:exported="false" />
         <activity
-            android:name=".CrudActivity"
+            android:name=".dbHelper.CrudActivity"
             android:exported="false" />
         <activity
             android:name=".MainMenu"

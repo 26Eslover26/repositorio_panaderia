@@ -59,11 +59,11 @@
     <string name="btnsqltext1">Listar productos</string>
     <string name="opcioncrud">CRUD</string>
     <string name="opcionubicaciones">Ubicaciones</string>
-    <string name="txt_codigo">Código del producto</string>
+    <string name="txt_producto">Nombre del producto</string>
     <string name="txt_descripcion">Descripción del producto</string>
     <string name="txt_precio">Precio del producto</string>
-    <string name="BotonRegistrar">Registrar Producto</string>
+    <string name="BotonRegistrar">Guardar</string>
     <string name="BotonBuscar">Buscar Producto</string>
-    <string name="BotonEliminar">Eliminar Producto</string>
-    <string name="BotonModificar">Modificar Producto</string>
+    <string name="BotonEliminar">Eliminar</string>
+    <string name="BotonModificar">Actualizar</string>
 </resources>

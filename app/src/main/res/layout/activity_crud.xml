@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context=".CrudActivity">
+    tools:context=".dbHelper.CrudActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,12 +23,12 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/txt_codigo"
+                android:id="@+id/txt_producto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
                 android:ems="10"
-                android:hint="@string/txt_codigo"
+                android:hint="@string/txt_producto"
                 android:inputType="number"
                 android:minHeight="48dp" />
 
@@ -53,35 +53,35 @@
                 android:minHeight="48dp" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnRegProd"
                 android:layout_width="315dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="80dp"
-                android:onClick="Registrar"
+
                 android:text="@string/BotonRegistrar" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnBuscProd"
                 android:layout_width="315dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:onClick="Buscar"
+
                 android:text="@string/BotonBuscar" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/btnModProd"
                 android:layout_width="315dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:onClick="Modificar"
+
                 android:text="@string/BotonModificar" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btnElmProd"
                 android:layout_width="318dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="44dp"
-                android:onClick="Eliminar"
+
                 android:text="@string/BotonEliminar" />
         </LinearLayout>
 

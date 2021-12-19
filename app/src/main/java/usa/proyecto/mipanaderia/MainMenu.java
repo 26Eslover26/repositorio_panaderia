@@ -5,18 +5,16 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
@@ -28,12 +26,14 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import usa.proyecto.mipanaderia.databinding.ActivityMainMenuBinding;
+import usa.proyecto.mipanaderia.dbHelper.CrudActivity;
 
 public class MainMenu extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainMenuBinding binding;
     private TextView txtEntrada;
+    private Button btnFavoritos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +61,24 @@ public class MainMenu extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main_menu);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        /*btnFavoritos = findViewById(R.id.favoriteId);
+        btnFavoritos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, "añadido a favoritos", Snackbar.LENGTH_LONG)
+                        .setActionTextColor(getResources().getColor(R.color.amarillo))
+                        .setAction("Deshacer", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                showNotification("TEST NOTIFY",
+                                        "Esta es una notificación de prueba");
+                                //onBackPressed();
+                            }
+                        })
+                        .show();
+            }
+        });*/
     }
 
     @Override
@@ -73,27 +91,10 @@ public class MainMenu extends AppCompatActivity {
         }
     }
 
-    /*@Override
+    @Override
     protected void onResume() {
         super.onResume();
-        Button btn = findViewById(R.id.favoriteId);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Snackbar.make(v, "añadido a favoritos", Snackbar.LENGTH_LONG)
-                        .setActionTextColor(getResources().getColor(R.color.amarillo))
-                        .setAction("Deshacer", new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                showNotification("TEST NOTIFY",
-                                       "Esta es una notificación de prueba");
-                                //onBackPressed();
-                            }
-                        })
-                        .show();
-            }
-        });
-    }*/
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -113,6 +114,10 @@ public class MainMenu extends AppCompatActivity {
         if (id == R.id.ubicacionesId) {
             Intent terceraPantalla = new Intent(this, UbicacionesActivity.class);
             startActivity(terceraPantalla);
+        }
+        if (id == R.id.listar) {
+            Intent cuartaPantalla = new Intent(this, ListarActivity.class);
+            startActivity(cuartaPantalla);
         }
 
         return super.onOptionsItemSelected(item);
