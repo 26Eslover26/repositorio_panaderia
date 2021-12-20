@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.reto2.FormActivity;
@@ -26,6 +27,7 @@ import com.example.reto2.adaptadores.SucursalAdapter;
 import com.example.reto2.casos_uso.CasoUsoProducto;
 import com.example.reto2.casos_uso.CasoUsoSucursal;
 import com.example.reto2.databinding.FragmentSucursalesBinding;
+import com.example.reto2.datos.ApiOracle;
 import com.example.reto2.datos.DBHelper;
 import com.example.reto2.modelos.Producto;
 import com.example.reto2.modelos.Sucursal;
@@ -40,7 +42,9 @@ public class SucursalesFragment extends Fragment {
     private String TABLE_NAME = "SUCURSALES";
     private CasoUsoSucursal casoUsoSucursal;
     private GridView gridView;
+    private ProgressBar progressBar;
     private DBHelper dbHelper;
+    private ApiOracle apiOracle;
     private ArrayList<Sucursal> sucursales;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -50,12 +54,17 @@ public class SucursalesFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_sucursales, container,false);
         try{
             casoUsoSucursal = new CasoUsoSucursal();
-            dbHelper = new DBHelper(getContext());
-            Cursor cursor = dbHelper.getData(TABLE_NAME);
-            sucursales = casoUsoSucursal.llenarListaSucursales(cursor);
+            apiOracle = new ApiOracle(root.getContext());
             gridView = (GridView) root.findViewById(R.id.gridSucursal);
-            SucursalAdapter sucursalAdapter = new SucursalAdapter(root.getContext(), sucursales);
-            gridView.setAdapter(sucursalAdapter);
+            progressBar = (ProgressBar) root.findViewById(R.id.progressBarSuc);
+            apiOracle.getAllSucursales(gridView, progressBar);
+
+            //gridView.setAdapter(sucursalAdapter);
+            //dbHelper = new DBHelper(getContext());
+            //Cursor cursor = dbHelper.getData(TABLE_NAME);
+            //sucursales = casoUsoSucursal.llenarListaSucursales(cursor);
+            //SucursalAdapter sucursalAdapter = new SucursalAdapter(root.getContext(), sucursales);
+
         }catch (Exception e){
             Toast.makeText(getContext(), e.toString(), Toast.LENGTH_LONG).show();
             Log.w("Error ->>>", e.toString());

@@ -3,8 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".ui.sucursales.SucursalesFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBarSuc"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <GridView
         android:id="@+id/gridSucursal"
         android:layout_width="match_parent"

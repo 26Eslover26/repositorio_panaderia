@@ -2,6 +2,7 @@ package com.example.reto2;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
 
@@ -12,6 +13,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.reto2.databinding.ActivityFromMapsBinding;
+import com.example.reto2.datos.ApiOracle;
 import com.example.reto2.datos.DBHelper;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -42,6 +45,7 @@ public class FormMapsActivity extends FragmentActivity implements OnMapReadyCall
     private TextView location;
 
     private DBHelper dbHelper;
+    private ApiOracle apiOracle;
     private GoogleMap mMap;
     private ActivityFromMapsBinding binding;
 
@@ -70,6 +74,7 @@ public class FormMapsActivity extends FragmentActivity implements OnMapReadyCall
         location = (TextView) findViewById(R.id.tvLocationSucursal);
 
         dbHelper = new DBHelper(getApplicationContext());
+        apiOracle = new ApiOracle(getApplicationContext());
 
         chooseSuc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +88,7 @@ public class FormMapsActivity extends FragmentActivity implements OnMapReadyCall
         });
 
         insertSuc.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
                 String idInsert = id.getText().toString();
@@ -90,11 +96,57 @@ public class FormMapsActivity extends FragmentActivity implements OnMapReadyCall
                 String descriptionInsert = description.getText().toString();
                 String locationInsert = location.getText().toString();
                 byte[] imageInsert = imageViewToByte(imgSelectedSuc);
-                dbHelper.insertData(nameInsert, descriptionInsert, locationInsert, imageInsert, "SUCURSALES");
+                apiOracle.insertSucursal(nameInsert, descriptionInsert, locationInsert, imgSelectedSuc);
+                //dbHelper.insertData(nameInsert, descriptionInsert, locationInsert, imageInsert, "SUCURSALES");
+                limpiar();
+            }
+        });
+
+        getSuc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //String id, ImageView imageView, EditText name, EditText description, TextView location
+                apiOracle.getSucursalById(
+                        id.getText().toString(),
+                        imgSelectedSuc,
+                        name,
+                        description,
+                        location,
+                        mMap
+                );
+            }
+        });
+
+        updateSuc.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
+            @Override
+            public void onClick(View v) {
+                apiOracle.updateSucursal(
+                        id.getText().toString(),
+                        name.getText().toString(),
+                        description.getText().toString(),
+                        location.getText().toString(),
+                        imgSelectedSuc
+                );
+                limpiar();
+            }
+        });
+
+        deleteSuc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                apiOracle.deleteSucursal(id.getText().toString());
+                limpiar();
             }
         });
 
 
+    }
+    public void limpiar(){
+        name.setText("");
+        description.setText("");
+        location.setText("");
+        imgSelectedSuc.setImageResource(R.drawable.ic_launcher_foreground);
     }
 
     @Override
