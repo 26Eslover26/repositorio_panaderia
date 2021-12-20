@@ -1,5 +1,7 @@
 package com.example.reto2.modelos;
 
+import com.google.android.gms.maps.model.LatLng;
+
 public class Sucursal {
     private int id;
     private String name;
@@ -15,7 +17,12 @@ public class Sucursal {
         this.image = image;
     }
 
-    public Sucursal() {}
+    public Sucursal(String name, String location) {
+        this.name = name;
+        this.location = location;
+    }
+
+    public Sucursal(int id, String name, String location, byte[] images, String is_favorite) {}
 
     public int getId() {
         return id;
@@ -55,5 +62,13 @@ public class Sucursal {
 
     public void setImage(byte[] image) {
         this.image = image;
+    }
+
+    public LatLng locationToCoord(){
+        String[] coord = this.location.split(",");
+        Double latitud = Double.parseDouble(coord[0]);
+        Double longitud = Double.parseDouble(coord[1]);
+        LatLng latLng = new LatLng(latitud,longitud);
+        return latLng;
     }
 }
