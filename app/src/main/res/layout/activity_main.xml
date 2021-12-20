@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
     android:padding="30dp"
-    tools:context=".MainActivity">
+    tools:context=".presentacion.MainActivity">
 
     <TextView
         android:id="@+id/txtBienvenidaId"

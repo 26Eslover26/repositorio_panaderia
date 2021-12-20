@@ -1,4 +1,4 @@
-package usa.proyecto.mipanaderia;
+package usa.proyecto.mipanaderia.presentacion;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,9 @@ import org.osmdroid.views.overlay.ItemizedOverlayWithFocus;
 import org.osmdroid.views.overlay.OverlayItem;
 
 import java.util.ArrayList;
+
+import usa.proyecto.mipanaderia.BuildConfig;
+import usa.proyecto.mipanaderia.R;
 
 public class UbicacionesActivity extends AppCompatActivity {
 

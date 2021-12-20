@@ -1,4 +1,4 @@
-package usa.proyecto.mipanaderia;
+package usa.proyecto.mipanaderia.presentacion;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -20,25 +21,105 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-import usa.proyecto.mipanaderia.dbHelper.AdminSQLiteOpenHelper;
+import usa.proyecto.mipanaderia.R;
+import usa.proyecto.mipanaderia.casosdeuso.productosCasoDeUso;
+import usa.proyecto.mipanaderia.model.productos;
+import usa.proyecto.mipanaderia.repository.AdminSQLiteOpenHelper;
+import usa.proyecto.mipanaderia.repository.productsRepository;
 
 public class ListarActivity extends AppCompatActivity {
 
     private EditText et_producto, et_descripcion, et_precio;
     private Button btn;
     private ActionBar actionBar;
+    private productsRepository productDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listar);
 
+        refreshList();
+
         btn = findViewById(R.id.btnSQL);
         btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                //List<String> your_array_list = conectToSQL();
-                //setListData(your_array_list);
+                productosCasoDeUso product = new productosCasoDeUso();
+                productos productoDB = product.CrearProducto(et_producto.getText().toString(), et_descripcion.getText().toString(), Integer.parseInt(et_precio.getText().toString()));
+
+                AdminSQLiteOpenHelper dbHelper = new AdminSQLiteOpenHelper(getApplicationContext());
+                productsRepository.write(dbHelper.getWritableDatabase(), productoDB);
+
                 refreshList();
+            }
+        });
+
+        Button btnLimpiar = findViewById(R.id.btnBorrar);
+        btnLimpiar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                productDB.clear();
+                refreshList();
+
+            }
+        });
+
+
+        Button btnActualiza = findViewById(R.id.btnActualiza);
+        btnActualiza.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                int idUser = productDB.getFirstidTable();
+                productDB.updateRecord( idUser, "nombre defecto", "apellido", 300);
+                refreshList();
+            }
+        });
+
+        Button btnAgregar = findViewById(R.id.btnSave);
+        btnAgregar.setOnClickListener(new View.OnClickListener() {
+            productos newProducto = new productos();
+
+            public void onClick(View v) {
+                String producto = et_producto.getText().toString();
+                String descripcion = et_descripcion.getText().toString();
+                String precio = et_precio.getText().toString();
+                SQLiteOpenHelper dbHelper = null;
+                SQLiteDatabase db = dbHelper.getWritableDatabase();
+                List<String> array = new ArrayList<>();
+
+                if (!producto.isEmpty() && !descripcion.isEmpty() && !precio.isEmpty()) {
+                    ContentValues registro = new ContentValues();
+
+                    registro.put("producto", producto);
+                    registro.put("descripcion", descripcion);
+                    registro.put("precio", precio);
+
+                    db.insert("productos", null, registro);
+                    db.close();
+
+                    et_producto.setText("");
+                    et_descripcion.setText("");
+                    et_precio.setText("");
+
+                    SQLiteDatabase dbRead = dbHelper.getReadableDatabase();
+                    Cursor c = dbRead.rawQuery("SELECT producto, descripcion, precio FROM productos", null);
+
+                    if (c.moveToFirst()) {
+                        do {
+                            String column1 = c.getString(0);
+                            String column2 = c.getString(1);
+                            String column3 = c.getString(2);
+                            array.add(column1);
+                            array.add(column2);
+                            array.add(column3);
+                        } while (c.moveToNext());
+                    }
+                    c.close();
+                    dbRead.close();
+                }
+                refreshList();
+
+
             }
         });
 

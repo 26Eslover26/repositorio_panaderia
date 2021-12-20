@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
@@ -26,7 +25,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import usa.proyecto.mipanaderia.databinding.ActivityMainMenuBinding;
-import usa.proyecto.mipanaderia.dbHelper.CrudActivity;
+import usa.proyecto.mipanaderia.repository.CrudActivity;
+import usa.proyecto.mipanaderia.presentacion.ListarActivity;
+import usa.proyecto.mipanaderia.presentacion.UbicacionesActivity;
 
 public class MainMenu extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package usa.proyecto.mipanaderia.dbHelper;
+package usa.proyecto.mipanaderia.repository;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

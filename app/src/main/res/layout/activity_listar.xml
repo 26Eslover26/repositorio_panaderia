@@ -7,7 +7,7 @@
     android:background="@drawable/fondo"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".ListarActivity">
+    tools:context=".presentacion.ListarActivity">
 
     <TextView
         android:id="@+id/productoName"

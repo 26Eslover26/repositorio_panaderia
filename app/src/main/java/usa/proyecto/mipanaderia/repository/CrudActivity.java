@@ -1,4 +1,4 @@
-package usa.proyecto.mipanaderia.dbHelper;
+package usa.proyecto.mipanaderia.repository;
 
 import androidx.appcompat.app.ActionBar;
 import
@@ -22,7 +22,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 

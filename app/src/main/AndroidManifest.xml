@@ -17,13 +17,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiPanaderia">
         <activity
-            android:name=".ListarActivity"
+            android:name=".presentacion.ListarActivity"
             android:exported="false" />
         <activity
-            android:name=".UbicacionesActivity"
+            android:name=".presentacion.UbicacionesActivity"
             android:exported="false" />
         <activity
-            android:name=".dbHelper.CrudActivity"
+            android:name=".repository.CrudActivity"
             android:exported="false" />
         <activity
             android:name=".MainMenu"
@@ -31,10 +31,10 @@
             android:label="@string/title_activity_main_menu"
             android:theme="@style/Theme.MiPanaderia.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".presentacion.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Splash"
+            android:name=".presentacion.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
